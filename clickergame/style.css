@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('background.jpg'); /* Add your background image file */
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 20px;
+}
+
+.leaderboard {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+}
+
+.leaderboard h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+#leaderboard-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#leaderboard-list li {
+  margin: 5px 0;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.game-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.scoreboard {
+  margin: 20px 0;
+}
+
+#score, #points-per-click {
+  font-size: 18px;
+}
+
+#click-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#click-button:hover {
+  background-color: #0056b3;
+}
+
+.upgrades {
+  margin: 20px 0;
+}
+
+.upgrades button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ffa500;
+  color: #fff;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.upgrades button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.house-container {
+  margin-top: 40px;
+  background-image: url('house.png'); /* Add your house image file */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.house-container h2 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.room {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  background-color: #d3d3d3;
+  border: 2px solid #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.room.locked {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.room:hover:not(.locked) {
+  background-color: #90ee90;
+}

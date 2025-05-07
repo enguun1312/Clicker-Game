@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clicker Game - House Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="leaderboard">
+    <h2>Leaderboard</h2>
+    <ul id="leaderboard-list">
+      <!-- Leaderboard entries will appear here -->
+    </ul>
+  </div>
+  <div class="game-container">
+    <h1>Clicker Game - House Edition</h1>
+    <div class="scoreboard">
+      <div id="score">Points: 0</div>
+      <div id="points-per-click">Points per Click: 1</div>
+    </div>
+    <button id="click-button">Click Me!</button>
+    <div class="upgrades">
+      <h2>Upgrades</h2>
+      <button id="upgrade-button" disabled>Upgrade (Cost: 10 Points)</button>
+    </div>
+    <div class="house-container">
+      <h2>Rooms</h2>
+      <div class="room" id="room-1">Living Room</div>
+      <div class="room locked" id="room-2">Kitchen (Locked)</div>
+      <div class="room locked" id="room-3">Bedroom (Locked)</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
